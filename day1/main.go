@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("./day1/input.txt")
+	f, err := os.Open("./part1/input.txt")
 	if err != nil {
 		log.Fatalln("Could not open input file:", err)
 	}
@@ -37,13 +37,13 @@ func main() {
 	slices.Sort(left)
 	slices.Sort(right)
 
-	res1 := day1(left, right)
-	res2 := day2(left, right)
+	res1 := part1(left, right)
+	res2 := part2(left, right)
 	log.Println("Result (part 1):", res1)
 	log.Println("Result (part 2):", res2)
 }
 
-func day1(left, right []int) int {
+func part1(left, right []int) int {
 	res := 0
 	for i, v := range left {
 		res += int(math.Abs(float64(v - right[i])))
@@ -51,7 +51,7 @@ func day1(left, right []int) int {
 	return res
 }
 
-func day2(left, right []int) int {
+func part2(left, right []int) int {
 	counters := make(map[int]int)
 	for _, v := range right {
 		counters[v]++
