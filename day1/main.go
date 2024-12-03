@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	f, err := os.Open("./part1/input.txt")
+	f, err := os.Open("./day1/input.txt")
 	if err != nil {
 		log.Fatalln("Could not open input file:", err)
 	}
