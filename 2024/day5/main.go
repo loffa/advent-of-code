@@ -28,7 +28,7 @@ func (rs Rules) Map() map[int][]int {
 }
 
 func main() {
-	f, err := os.Open("./day5/input.txt")
+	f, err := os.Open("./2024/day5/input.txt")
 	if err != nil {
 		log.Fatalln("Could not open input file:", err)
 	}

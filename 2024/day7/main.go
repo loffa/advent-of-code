@@ -14,7 +14,7 @@ type Calibration struct {
 }
 
 func main() {
-	f, err := os.Open("./day7/input.txt")
+	f, err := os.Open("./2024/day7/input.txt")
 	if err != nil {
 		log.Fatalln("Could not open input file:", err)
 	}

@@ -11,7 +11,7 @@ import (
 type Pos [2]int
 
 func main() {
-	f, err := os.Open("./day11/input.txt")
+	f, err := os.Open("./2024/day11/input.txt")
 	if err != nil {
 		log.Fatalln("Could not open input file:", err)
 	}

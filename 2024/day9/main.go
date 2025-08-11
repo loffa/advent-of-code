@@ -19,7 +19,7 @@ type FreeArea struct {
 }
 
 func main() {
-	f, err := os.Open("./day9/input.txt")
+	f, err := os.Open("./2024/day9/input.txt")
 	if err != nil {
 		log.Fatalln("Could not open input file:", err)
 	}
