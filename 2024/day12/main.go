@@ -27,9 +27,9 @@ func main() {
 
 	res1 := part1(plots)
 	res2 := part2()
+
 	log.Println("Result (part 1):", res1)
 	log.Println("Result (part 2):", res2)
-
 }
 
 func checkInside(points [][]byte, pos Pos) bool {
